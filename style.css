@@ -1,0 +1,61 @@
+body {
+	background-color: white;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	background-image: url(media/controllerBg.png);
+}
+
+#controls,
+#overall,
+#puzzlearea {
+	width: 400px;
+}
+
+#controls {
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1 {
+	margin: 10px 0px;
+	text-align: center;
+}
+
+/* Used to center the puzzle. */
+#overall {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* The area that holds the 15 puzzle pieces. */
+#puzzlearea {
+	background-color: rgb(0, 0, 0);
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+}
+
+/* This class should be applied to each of the 15 puzzle pieces. */
+.puzzlepiece {
+	background-image: url(media/background.jpg);
+	border: 2px solid black;
+	height: 96px;
+	line-height: 96px;
+	position: absolute;
+	text-align: center;
+	font-size: 1px;
+	vertical-align: middle;
+	width: 96px;
+}
+
+/* This class should be applied to a puzzle piece that can be moved. */
+.movablepiece:hover {
+	border-color: red;
+	color: #000000;
+}
+
+#w3c {
+	text-align: right;
+}
+
